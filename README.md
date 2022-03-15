@@ -1,4 +1,4 @@
-# vue-animated-ui
+# vue-login-signup-ui
 
 ## Project setup
 ```
