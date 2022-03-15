@@ -3,28 +3,28 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'signup',
-    component: () => import('../components/Signup.vue')
+    component: () => import('../components/Signup.vue'),
   },
   {
     path: '/login',
     name: 'login',
-    component: () => import('../components/Login.vue')
+    component: () => import('../components/Login.vue'),
   },
   {
     path: '/forgot-password',
     name: 'forgot-password',
-    component: () => import('../components/ForgotPassword.vue')
-  }
+    component: () => import('../components/ForgotPassword.vue'),
+  },
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
 })
 
 export default router
